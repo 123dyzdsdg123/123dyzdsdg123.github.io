@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>小恐龙跳跃游戏</title>
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#game-board {
+  width: 100vw;
+  height: 40vh;
+  background-color: #f7f7f7;
+  position: relative;
+  margin: 0 auto;
+}
+
+#dino {
+  width: 30px;
+  height: 50px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  z-index: 10; /* 定义在上面 */
+}
+
+.obstacle {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: #66cc99;
+  z-index: 5; /* 定义在下面 */
+}
+ .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-lg {
+  width: 240px;
+  font-size: 32px;
+  height: 80px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.btn-lg:hover {
+  background-color: #3367d6;
+}
+ 
+ 
+ 
+    </style>
+  </head>
+  <body>
+    <div id="game-board">
+  <div id="dino"></div>
+</div>
+
+<div class="buttons">
+  <button id="jump-button" class="btn-lg">跳</button>
+  <button id="restart-button" class="btn-lg">重新开始</button>
+</div>
+    <script src="game.js"></script>
+  </body>
+</html>
