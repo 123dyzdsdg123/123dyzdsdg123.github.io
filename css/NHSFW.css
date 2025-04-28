@@ -46,15 +46,19 @@ h1 {
 /* 图片容器样式 */
 .image-container {
     margin-bottom: 20px;
+    max-width: 600px; /* 设置最大宽度 */
+    max-height: 400px; /* 设置最大高度 */
+    overflow: hidden; /* 隐藏超出部分 */
+    border-radius: 10px; /* 圆角效果 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 阴影效果 */
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* 图片宽度自适应容器 */
+    max-height: 100%; /* 图片高度自适应容器 */
+    object-fit: cover; /* 保持图片比例并填充容器 */
+    border-radius: 10px; /* 圆角效果 */
 }
-
 /* 段落样式 */
 p {
     font-size: 18px;
