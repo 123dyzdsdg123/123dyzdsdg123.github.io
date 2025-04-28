@@ -228,6 +228,33 @@
             opacity: 0;
             animation: sparkle 1s ease-out forwards;
         }
+
+        /* 底部导航栏样式 */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid var(--light-color);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .bottom-nav a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .bottom-nav a:hover {
+            background-color: var(--light-color);
+        }
     </style>
 </head>
 <body>
@@ -238,9 +265,9 @@
     <div class="main-content">
         <h1>✨ 神奇の传送门 ✨</h1>
         <div class="button-container">
-            <button onclick="window.location.href='p1.html'">NSFW</button>
-            <button onclick="window.location.href='p2.html'">SFW</button>
-            <button onclick="window.location.href='p3.html'">赌徒</button>
+            <button onclick="window.location.href='NSFW.html'">NSFW</button>
+            <button onclick="window.location.href='SFW.html'">SFW</button>
+            <button onclick="window.location.href='HSFW.html'">赌徒</button>
             <button onclick="window.location.href='p4.html'">Hina</button>
         </div>
     </div>
@@ -248,4 +275,16 @@
     <!-- 信息容器 -->
     <div class="info-container">
         <p>NSFW <span class="tag">R18内容</span></p>
-        <p>SFW <span class="tag">非R18内容</
+        <p>SFW <span class="tag">非R18内容</span></p>
+        <p>赌徒 <span class="tag">可能的R18</span></p>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="bottom-nav">
+        <a href="index.html">主页</a>
+        <a href="z.html">专区</a>
+        <a href="zp.html">大转盘</a>
+        <a href="faq.html">?</a>
+    </div>
+</body>
+</html>
