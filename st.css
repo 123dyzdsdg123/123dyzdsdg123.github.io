@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #2b3a4e;
+    --secondary-color: #f9f9f9;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+*:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* 头部样式 */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* 主要内容容器 */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+@media (max-width: 840px) {
+    main {
+        margin: 30px 20px;
+    }
+}
+
+/* 每个板块的标题 */
+section h2 {
+    color: var(--primary-color);
+    font-size: 20px;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+section h2:hover {
+    padding-left: 15px;
+}
+
+/* 列表样式 */
+.features ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.features li {
+    margin: 8px 0;
+}
+
+/* 底部样式 */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 14px;
+}
